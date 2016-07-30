@@ -16,7 +16,11 @@ export default function gameDataReducer(state = initialState.gameData, action) {
       // For this example, just simulating a save by changing date modified.
       // In a real app using Redux, you might use redux-thunk and handle the async call in fuelSavingsActions.js
       newState = objectAssign({}, state);
-      console.log("TOGGLE_PLAYER_STATE");
+      for(let player of newState.players) {
+        if (player.number == action.playerNumber) {
+          player.playing = !player.playing;
+        }
+      }
       return newState;
 
     default:

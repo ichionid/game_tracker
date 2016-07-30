@@ -1,20 +1,4 @@
 export default {
-  fuelSavings: {
-    newMpg: '',
-    tradeMpg: '',
-    newPpg: '',
-    tradePpg: '',
-    milesDriven: '',
-    milesDrivenTimeframe: 'week',
-    displayResults: false,
-    dateModified: null,
-    necessaryDataIsProvidedToCalculateSavings: false,
-    savings: {
-      monthly: 0,
-      annual: 0,
-      threeYear: 0
-    }
-  },
   gameData: {
     opponentTeamName: '',
     score: {
@@ -22,17 +6,17 @@ export default {
       opponents: '',
     },
     players: [
-      {number: 4},
+      {number: 4, playing: true},
       {number: 5},
-      {number: 6},
+      {number: 6, playing: true},
       {number: 7},
-      {number: 8},
+      {number: 8, playing: true},
       {number: 9},
-      {number: 10},
-      {number: 11},
-      {number: 12},
+      {number: 10, playing: false},
+      {number: 11, playing: false},
+      {number: 12, playing: true},
       {number: 13},
-      {number: 14},
+      {number: 14, playing: true},
       {number: 15}
     ],
     active_squad: [5,10,13,11,15],

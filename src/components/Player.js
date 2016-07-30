@@ -1,11 +1,11 @@
 import React, {PropTypes} from 'react';
 
 const Player = (props) => {
-  const handleChange = (e) => {
-    props.togglePlayerState(props.name, e.target.value);
+  const handleChange = () => {
+    props.togglePlayerState(props.player.number);
   };
   return (
-    <button onClick={handleChange}>{props.player.number}</button>
+    <button className={(props.player.playing ? 'playing' : 'not-playing')} onClick={handleChange}>{props.player.number}</button>
   );
 }
 
