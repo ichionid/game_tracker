@@ -31,10 +31,13 @@
   "dependencies": {
     "object-assign": "4.1.0",
     "react": "15.2.1",
+    "react-cntdwn": "0.3.0",
+    "react-countdown-timer": "1.0.3",
     "react-dom": "15.2.1",
     "react-redux": "4.4.5",
     "react-router": "2.6.0",
     "react-router-redux": "4.0.5",
+    "react-timer": "1.0.1",
     "redux": "3.5.2"
   },
   "devDependencies": {

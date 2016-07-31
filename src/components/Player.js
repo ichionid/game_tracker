@@ -7,7 +7,7 @@ const Player = (props) => {
   return (
     <button className={(props.player.playing ? 'playing' : 'not-playing')} onClick={handleChange}>{props.player.number}</button>
   );
-}
+};
 
 Player.propTypes = {
   player: PropTypes.object.isRequired,
