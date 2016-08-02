@@ -4,6 +4,7 @@ import CountdownTimer from 'react-timer';
 import {bindActionCreators} from 'redux';
 import * as actions from '../actions/gameDataActions';
 import Team from '../components/Team';
+import ScoreBoard from '../components/ScoreBoard';
 
 export const GameTrackerPage = (props) => {
   let OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
@@ -11,7 +12,7 @@ export const GameTrackerPage = (props) => {
   return (
     <div>
       <CountdownTimer options={OPTIONS} />
-
+      <ScoreBoard score={props.gameData.score} />
       <Team gameData={props.gameData} togglePlayerState={props.actions.togglePlayerState} />
     </div>
   );

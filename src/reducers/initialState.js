@@ -20,5 +20,9 @@ export default {
       {number: 15}
     ],
     active_squad: [5,10,13,11,15],
+    score: {
+      home: 0,
+      away: 0,
+    }
   }
 };
