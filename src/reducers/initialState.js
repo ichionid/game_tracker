@@ -1,10 +1,6 @@
 export default {
   gameData: {
     opponentTeamName: '',
-    score: {
-      hosts: '',
-      opponents: '',
-    },
     players: [
       {number: 4, playing: true},
       {number: 5},

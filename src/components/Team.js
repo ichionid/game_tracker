@@ -2,10 +2,10 @@ import React, {PropTypes} from 'react';
 import Player from './Player';
 
 const Team = (props) => {
-  let gameData = props.gameData;
   let playerButtons = [];
-  for (let player of gameData.players) {
-    playerButtons.push(<Player player={player} togglePlayerState={props.togglePlayerState}/>);
+  let id=0;
+  for (let player of props.gameData.players) {
+    playerButtons.push(<Player key={id++} player={player} togglePlayerState={props.togglePlayerState}/>);
   }
   return (
     <div className="players">
@@ -15,8 +15,8 @@ const Team = (props) => {
 };
 
 Team.propTypes = {
-  togglePlayerState: PropTypes.func.required,
-  gameData: PropTypes.array.required,
+  togglePlayerState: PropTypes.func.isRequired,
+  gameData: PropTypes.object.isRequired,
 };
 
 export default Team;
