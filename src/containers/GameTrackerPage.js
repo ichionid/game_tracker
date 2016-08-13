@@ -1,20 +1,20 @@
 import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
-import Countdown from 'react-cntdwn';
 import {bindActionCreators} from 'redux';
 import * as actions from '../actions/gameDataActions';
+import Timer from 'react-timer'
+
 import Team from '../components/Team';
 import ScoreBoard from '../components/ScoreBoard';
+let OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
 
 export const GameTrackerPage = (props) => {
   let test=10;
   return (
     <div>
-      <Countdown targetDate={new Date('August 29, 2017')}
-        startDelay={2000}
-        interval={1000}
-        timeSeparator={':'}/>
-                 <ScoreBoard
+      <Timer options={OPTIONS} />
+
+      <ScoreBoard
         score={props.gameData.score} 
         increaseHomeScore={props.actions.increaseHomeScore}
         decreaseHomeScore={props.actions.decreaseHomeScore}

@@ -45,3 +45,30 @@ td.fuel-savings-label { width: 175px; }
 .players button.not-playing {
   background-color: white;
 }
+.plus-icon, 
+.minus-icon {
+  width:40px;
+  height:40px;
+  display: block;
+}
+.column {
+  display: inline-block;
+}
+.awayteam {
+  width: 30px;
+  height: 80px;
+  text-align: center;
+  font-size: x-large;
+  vertical-align: top;
+  line-height: normal;
+  background-color: red;
+}
+.hometeam {
+  width: 30px;
+  height: 80px;
+  text-align: center;
+  font-size: x-large;
+  vertical-align: top;
+  line-height: normal;
+  background-color: green;
+}
