@@ -1,4 +1,3 @@
-drop table games;
 CREATE TABLE games
 (
 gamesid INT NOT NULL AUTO_INCREMENT,
@@ -10,7 +9,7 @@ PRIMARY KEY (gamesid)
 );
 CREATE TABLE squads
 (
-id int NOT NULL,
+id INT NOT NULL AUTO_INCREMENT,
 players VARCHAR(255) NOT NULL,
 entry_timestamp TIMESTAMP NOT NULL ON UPDATE CURRENT_TIMESTAMP,
 home_team_score varchar(255) NOT NULL,
